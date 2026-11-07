@@ -1,1 +1,55 @@
-{"expo":{"name":"HealthyLife","slug":"healthylife","version":"1.0.0","orientation":"portrait","scheme":"healthylife","userInterfaceStyle":"light","newArchEnabled":true,"ios":{"supportsTablet":true,"bundleIdentifier":"com.healthylife.app","infoPlist":{"NSHealthShareUsageDescription":"HealthyLife membaca langkah dan aktivitas untuk menampilkan progres kesehatanmu.","NSHealthUpdateUsageDescription":"HealthyLife hanya menulis data kesehatan jika kamu memilih fitur tersebut."}},"android":{"package":"com.healthylife.app","minSdkVersion":26,"permissions":["android.permission.health.READ_STEPS","android.permission.health.READ_ACTIVE_CALORIES_BURNED","android.permission.health.READ_EXERCISE"]},"plugins":["expo-router",["@appeeky/expo-healthkit",{"healthSharePermission":"Izinkan HealthyLife membaca langkah dan aktivitas kesehatanmu.","healthUpdatePermission":"Izinkan HealthyLife menulis aktivitas yang kamu catat.","healthConnectPermissions":["android.permission.health.READ_STEPS","android.permission.health.READ_ACTIVE_CALORIES_BURNED","android.permission.health.READ_EXERCISE"]}],"expo-secure-store"]}}
+{
+  "expo": {
+    "name": "HealthyLife",
+    "slug": "healthylife",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "healthylife",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.healthylife.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "HealthyLife membaca langkah dan aktivitas untuk menampilkan progres kesehatanmu.",
+        "NSHealthUpdateUsageDescription": "HealthyLife hanya menulis data kesehatan jika kamu memilih fitur tersebut."
+      }
+    },
+    "android": {
+      "package": "com.healthylife.app",
+      "minSdkVersion": 26,
+      "permissions": [
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.READ_EXERCISE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@appeeky/expo-healthkit",
+        {
+          "healthSharePermission": "Izinkan HealthyLife membaca langkah dan aktivitas kesehatanmu.",
+          "healthUpdatePermission": "Izinkan HealthyLife menulis aktivitas yang kamu catat.",
+          "healthConnectPermissions": [
+            "android.permission.health.READ_STEPS",
+            "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+            "android.permission.health.READ_EXERCISE"
+          ]
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "1eb8524f-61b9-4716-8c5d-41e4cb2f9484"
+      }
+    },
+    "owner": "holywinds"
+  }
+}
