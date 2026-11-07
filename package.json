@@ -1,0 +1,12 @@
+{
+  "name": "healthylife-platform",
+  "private": true,
+  "workspaces": ["apps/*", "services/*"],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @healthylife/web",
+    "dev:api": "npm run dev --workspace @healthylife/api",
+    "dev:mobile": "npm run start --workspace @healthylife/mobile",
+    "build:web": "npm run build --workspace @healthylife/web",
+    "start:api": "npm run start --workspace @healthylife/api"
+  }
+}

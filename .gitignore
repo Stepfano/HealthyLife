@@ -1,0 +1,16 @@
+node_modules/
+dist/
+apps/web/dist/
+apps/mobile/.expo/
+apps/mobile/android/
+apps/mobile/ios/
+.expo/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+work/
+outputs/
+coverage/
+*.apk
